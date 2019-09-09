@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8ABEDD8-7C06-4D5A-8BE0-827604B36504}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Jay_7_OOPS_windows_forms</RootNamespace>
+    <AssemblyName>Jay_7_OOPS_windows_forms</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArthmaticOpetaion.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="CategoryDetails.cs" />
+    <Compile Include="Categoty_By_Products.cs" />
+    <Compile Include="CheckTopic.cs" />
+    <Compile Include="CompanyDetails.cs" />
+    <Compile Include="ConnectionString.cs" />
+    <Compile Include="Constructor.cs" />
+    <Compile Include="CustomerCheck.cs" />
+    <Compile Include="CustomerProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerProducts.Designer.cs">
+      <DependentUpon>CustomerProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAL.cs" />
+    <Compile Include="DynamicPolyomrphism_Ex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DynamicPolyomrphism_Ex.Designer.cs">
+      <DependentUpon>DynamicPolyomrphism_Ex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmailCheck.cs" />
+    <Compile Include="EmployeeDetails.cs" />
+    <Compile Include="Employee_Salary_interface.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm Employee_Salary_check_interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm Employee_Salary_check_interface.Designer.cs">
+      <DependentUpon>frm Employee_Salary_check_interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArrayListAddDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArrayListAddDisplay.Designer.cs">
+      <DependentUpon>frmArrayListAddDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArrayListInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArrayListInsert.Designer.cs">
+      <DependentUpon>frmArrayListInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArrayListRemoveAt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArrayListRemoveAt.Designer.cs">
+      <DependentUpon>frmArrayListRemoveAt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBajajMotors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBajajMotors.Designer.cs">
+      <DependentUpon>frmBajajMotors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookDetails.Designer.cs">
+      <DependentUpon>frmBookDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookDetailsIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookDetailsIO.Designer.cs">
+      <DependentUpon>frmBookDetailsIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookMaster.Designer.cs">
+      <DependentUpon>frmBookMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrowser.Designer.cs">
+      <DependentUpon>frmBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCategoryDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategoryDetails.Designer.cs">
+      <DependentUpon>frmCategoryDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComboBoxListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComboBoxListBox.Designer.cs">
+      <DependentUpon>frmComboBoxListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConstructor.Designer.cs">
+      <DependentUpon>frmConstructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomer.Designer.cs">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomer_HashTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomer_HashTable.Designer.cs">
+      <DependentUpon>frmCustomer_HashTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmail.Designer.cs">
+      <DependentUpon>frmEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmErrorHandling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmErrorHandling.Designer.cs">
+      <DependentUpon>frmErrorHandling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHashTableImplement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHashTableImplement.Designer.cs">
+      <DependentUpon>frmHashTableImplement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHeroMotors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHeroMotors.Designer.cs">
+      <DependentUpon>frmHeroMotors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHotelMember_MultipleInheritance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHotelMember_MultipleInheritance.Designer.cs">
+      <DependentUpon>frmHotelMember_MultipleInheritance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHotelMenuDetails_MultipleInheritace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHotelMenuDetails_MultipleInheritace.Designer.cs">
+      <DependentUpon>frmHotelMenuDetails_MultipleInheritace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertDeleteUpdate_Ado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertDeleteUpdate_Ado.Designer.cs">
+      <DependentUpon>frmInsertDeleteUpdate_Ado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInterface_EmployeeSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInterface_EmployeeSalary.Designer.cs">
+      <DependentUpon>frmInterface_EmployeeSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIOTopicVerify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIOTopicVerify.Designer.cs">
+      <DependentUpon>frmIOTopicVerify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmList.Designer.cs">
+      <DependentUpon>frmList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListEmployeeCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListEmployeeCompany.Designer.cs">
+      <DependentUpon>frmListEmployeeCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMultiCastDelegate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMultiCastDelegate.Designer.cs">
+      <DependentUpon>frmMultiCastDelegate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMultilevel_Inheritance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMultilevel_Inheritance.Designer.cs">
+      <DependentUpon>frmMultilevel_Inheritance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperatorOverLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperatorOverLoad.Designer.cs">
+      <DependentUpon>frmOperatorOverLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPartial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPartial.Designer.cs">
+      <DependentUpon>frmPartial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQueueImplement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQueueImplement.Designer.cs">
+      <DependentUpon>frmQueueImplement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSingleCastDelegateImplement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSingleCastDelegateImplement.Designer.cs">
+      <DependentUpon>frmSingleCastDelegateImplement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStackImplement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStackImplement.Designer.cs">
+      <DependentUpon>frmStackImplement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStackImplimentation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStackImplimentation.Designer.cs">
+      <DependentUpon>frmStackImplimentation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTemplateClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTemplateClass.Designer.cs">
+      <DependentUpon>frmTemplateClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTemplateMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTemplateMethod.Designer.cs">
+      <DependentUpon>frmTemplateMethod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThreadEvenOdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThreadEvenOdd.Designer.cs">
+      <DependentUpon>frmThreadEvenOdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTryCatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTryCatch.Designer.cs">
+      <DependentUpon>frmTryCatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVehicleVerify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVehicleVerify.Designer.cs">
+      <DependentUpon>frmVehicleVerify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frnUserDefineException.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frnUserDefineException.Designer.cs">
+      <DependentUpon>frnUserDefineException.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotelVerify_MultipleInheritance.cs" />
+    <Compile Include="MotorVehicle.cs" />
+    <Compile Include="MultiCastDelegateImplement.cs" />
+    <Compile Include="MyLogic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyLogic.Designer.cs">
+      <DependentUpon>MyLogic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyTemplate.cs" />
+    <Compile Include="MyThread_even_odd.cs" />
+    <Compile Include="Operation.cs" />
+    <Compile Include="Operation1.cs" />
+    <Compile Include="OperatorOverLoad.cs" />
+    <Compile Include="OverLoad.cs" />
+    <Compile Include="ParentClass_DynamicPolymorphism.cs" />
+    <Compile Include="ProductsByCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductsByCategory.Designer.cs">
+      <DependentUpon>ProductsByCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingleCast_Delegate.cs" />
+    <Compile Include="StudentBLL.cs" />
+    <Compile Include="student_details.cs" />
+    <Compile Include="ThreeTierImplement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThreeTierImplement.Designer.cs">
+      <DependentUpon>ThreeTierImplement.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CustomerProducts.resx">
+      <DependentUpon>CustomerProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DynamicPolyomrphism_Ex.resx">
+      <DependentUpon>DynamicPolyomrphism_Ex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm Employee_Salary_check_interface.resx">
+      <DependentUpon>frm Employee_Salary_check_interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArrayListAddDisplay.resx">
+      <DependentUpon>frmArrayListAddDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArrayListInsert.resx">
+      <DependentUpon>frmArrayListInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArrayListRemoveAt.resx">
+      <DependentUpon>frmArrayListRemoveAt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBajajMotors.resx">
+      <DependentUpon>frmBajajMotors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookDetails.resx">
+      <DependentUpon>frmBookDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookDetailsIO.resx">
+      <DependentUpon>frmBookDetailsIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookMaster.resx">
+      <DependentUpon>frmBookMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrowser.resx">
+      <DependentUpon>frmBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCategoryDetails.resx">
+      <DependentUpon>frmCategoryDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComboBoxListBox.resx">
+      <DependentUpon>frmComboBoxListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConstructor.resx">
+      <DependentUpon>frmConstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomer.resx">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomer_HashTable.resx">
+      <DependentUpon>frmCustomer_HashTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmail.resx">
+      <DependentUpon>frmEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmErrorHandling.resx">
+      <DependentUpon>frmErrorHandling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHashTableImplement.resx">
+      <DependentUpon>frmHashTableImplement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHeroMotors.resx">
+      <DependentUpon>frmHeroMotors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHotelMember_MultipleInheritance.resx">
+      <DependentUpon>frmHotelMember_MultipleInheritance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHotelMenuDetails_MultipleInheritace.resx">
+      <DependentUpon>frmHotelMenuDetails_MultipleInheritace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertDeleteUpdate_Ado.resx">
+      <DependentUpon>frmInsertDeleteUpdate_Ado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInterface_EmployeeSalary.resx">
+      <DependentUpon>frmInterface_EmployeeSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIOTopicVerify.resx">
+      <DependentUpon>frmIOTopicVerify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmList.resx">
+      <DependentUpon>frmList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListEmployeeCompany.resx">
+      <DependentUpon>frmListEmployeeCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMultiCastDelegate.resx">
+      <DependentUpon>frmMultiCastDelegate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMultilevel_Inheritance.resx">
+      <DependentUpon>frmMultilevel_Inheritance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperatorOverLoad.resx">
+      <DependentUpon>frmOperatorOverLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPartial.resx">
+      <DependentUpon>frmPartial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQueueImplement.resx">
+      <DependentUpon>frmQueueImplement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSingleCastDelegateImplement.resx">
+      <DependentUpon>frmSingleCastDelegateImplement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStackImplement.resx">
+      <DependentUpon>frmStackImplement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStackImplimentation.resx">
+      <DependentUpon>frmStackImplimentation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTemplateClass.resx">
+      <DependentUpon>frmTemplateClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTemplateMethod.resx">
+      <DependentUpon>frmTemplateMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThreadEvenOdd.resx">
+      <DependentUpon>frmThreadEvenOdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTryCatch.resx">
+      <DependentUpon>frmTryCatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVehicleVerify.resx">
+      <DependentUpon>frmVehicleVerify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frnUserDefineException.resx">
+      <DependentUpon>frnUserDefineException.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyLogic.resx">
+      <DependentUpon>MyLogic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsByCategory.resx">
+      <DependentUpon>ProductsByCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ThreeTierImplement.resx">
+      <DependentUpon>ThreeTierImplement.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
